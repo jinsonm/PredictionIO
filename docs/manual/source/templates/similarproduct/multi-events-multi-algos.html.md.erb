@@ -26,7 +26,7 @@ Modify the following in DataSource.scala:
 
 - In addiiton to the original `ViewEvent` class, add a new class `LikeEvent` which has a boolean `like` field to represent it's like or dislike event.
 - Add a new field `likeEvents` into `TrainingData` class to store the `RDD[LikeEvents]`.
-- Modidy DataSource's `read()` function to read "like" and "dislike" events from the Event Store.
+- Modify DataSource's `read()` function to read "like" and "dislike" events from the Event Store.
 
 The modification is shown below:
 
